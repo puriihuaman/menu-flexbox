@@ -1,0 +1,128 @@
+:root {
+	--dark-color: #1f1f1f;
+	--dark-color-alt: #444444;
+
+	--color-line: #666666;
+
+	--color-light: #fafafa;
+	--color-light-alt: #eeeeee;
+
+	/* First color */
+	/* --first-color				: #436CFF;
+	--first-color-alt			: #5C80FF;
+	--first-color-hover		: #3A5EDF; */
+
+	--first-color: #0075ff;
+	--first-color-alt: #2086fa;
+	--first-color-hover: #046be2;
+
+	/* Second color */
+	--second-color: #ef3748;
+	--second-color-alt: #E36F7B;
+	--second-color-hover: #dd2b3c;
+
+	/* Third color */
+	--third-color: #20b004;
+	--third-color-alt: #55b742;
+	--third-color-hover: #22990b;
+
+	--font-size: 16px;
+	--font-titles: 'Raleway', sans-serif;
+	--font-text: 'Roboto', sans-serif;
+
+	--header-height: 60px;
+	--height-check: 18px;
+}
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+
+body {
+	background-color: var(--dark-color);
+	color: var(--color-light);
+	margin: 0;
+	font-size: var(--font-size);
+	font-family: var(--font-text);
+}
+
+.dado {
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 2em;
+
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: var(--color-line);
+}
+
+.cara {
+	width: 120px;
+	height: 120px;
+	background-color: var(--dark-color);
+	padding: .5rem;
+
+	display: flex;
+	border-radius: .5rem;
+	margin-bottom: 1rem;
+}
+
+
+.punto {
+	background-color: var(--color-light);
+	height: 28px;
+	width: 28px;
+	border-radius: 50%;
+}
+
+.cara-1 {
+	justify-content: center;
+	align-items: center;
+}
+.cara-2 {
+	justify-content: space-between;
+}
+.cara-2 .punto:first-child {
+	align-self: flex-start;
+}
+.cara-2 .punto:last-child {
+	align-self: flex-end;
+}
+.cara-3 {
+	align-items: center;
+}
+.cara-3 .punto:first-child {
+	align-self: flex-start;
+}
+.cara-3 .punto:last-child {
+	align-self: flex-end;
+}
+
+.cara-4 {
+	justify-content: space-between;
+}
+.cara-4 .column, .cara-5 .column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.cara-5 {
+	justify-content: space-between;
+}
+
+.cara-5 .punto:nth-child(2) {
+	align-self: center;
+}
+
+.cara-6 {
+	justify-content: space-between;
+}
+.cara-6 .column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

@@ -1,0 +1,130 @@
+:root {
+	--dark-color: #1f1f1f;
+	--dark-color-alt: #444444;
+
+	--color-line: #666666;
+
+	--color-light: #fafafa;
+	--color-light-alt: #eeeeee;
+
+	/* First color */
+	--first-color				: #436CFF;
+	--first-color-alt			: #5C80FF;
+	--first-color-hover		: #3A5EDF;
+
+	/* --first-color: #0075ff;
+	--first-color-alt: #2086fa;
+	--first-color-hover: #046be2; */
+
+	/* Second color */
+	--second-color: #ef3748;
+	--second-color-alt: #E36F7B;
+	--second-color-hover: #dd2b3c;
+
+	/* Third color */
+	--third-color: #20b004;
+	--third-color-alt: #55b742;
+	--third-color-hover: #22990b;
+
+	--font-size: 16px;
+	--font-titles: 'Raleway', sans-serif;
+	--font-text: 'Roboto', sans-serif;
+
+	--header-height: 60px;
+	--height-check: 18px;
+}
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+
+body {
+	background-color: var(--dark-color);
+	color: var(--color-light);
+	margin: 0;
+	font-size: var(--font-size);
+	font-family: var(--font-text);
+}
+.header {
+	background-color: var(--dark-color-alt);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logotipo {
+	height: 100px;
+	line-height: 0;
+	background-color: var(--color-light-alt);
+	border-radius: 50%;
+	/* margin-right: auto; */
+}
+.logo {
+	height: 100px;
+	width: 100px;
+	display: block;
+}
+
+.title {
+	text-align: center;
+	font-family: var(--font-titles);
+	color: var(--first-color);
+}
+
+.menu {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	display: flex;
+	margin-right: .5rem;
+}
+
+.menu__item {
+	background-color: var(--color-light-alt);
+	color: var(--dark-color);
+	padding: 0 .5em;
+	line-height: 2;
+	margin-left: 10px;
+	border-radius: .5rem;
+	cursor: pointer;
+}
+/* Flexbox parte 2 */
+
+.container {
+	/* width: 500px; */
+	width: 90%;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--second-color-alt);
+
+	display: flex;
+	/* flex-direction: column; */
+}
+
+.item {
+	background-color: var(--first-color);
+	flex-basis: 25%;
+	/* flex-grow: 1; */
+	/* width: 150px; */
+	margin: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item:nth-child(even) {
+	background-color: var(--third-color);
+}
+.item:nth-child(2) {
+	/* flex-grow: 2; */
+}
+
+
+
+footer {
+	padding-top: 3em;
+	text-align: center;
+}
