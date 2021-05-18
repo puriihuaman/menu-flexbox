@@ -1,20 +1,16 @@
 :root {
-	--dark-color: #1f1f1f;
-	--dark-color-alt: #444444;
+	--dark-color: #111D26;
+	--dark-color-alt: #162530;
 
-	--color-line: #666666;
+	--color-line: #38607D;
 
 	--color-light: #fafafa;
 	--color-light-alt: #eeeeee;
 
 	/* First color */
-	/* --first-color				: #436CFF;
+	--first-color				: #436CFF;
 	--first-color-alt			: #5C80FF;
-	--first-color-hover		: #3A5EDF; */
-
-	--first-color: #0075ff;
-	--first-color-alt: #2086fa;
-	--first-color-hover: #046be2;
+	--first-color-hover		: #3A5EDF;
 
 	/* Second color */
 	--second-color: #ef3748;
@@ -28,7 +24,7 @@
 
 	--font-size: 16px;
 	--font-titles: 'Raleway', sans-serif;
-	--font-text: 'Roboto', sans-serif;
+	--font-text: 'Open Sans', sans-serif;
 
 	--header-height: 60px;
 	--height-check: 18px;
