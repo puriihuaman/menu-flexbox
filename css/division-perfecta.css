@@ -1,11 +1,12 @@
 :root {
-	--dark-color: #111D26;
-	--dark-color-alt: #162530;
+	/* Colores */
+	--dark-color: #162530;
+	--dark-color-alt: #111D26;
 
 	--color-line: #38607D;
 
 	--color-light: #fafafa;
-	--color-light-alt: #eeeeee;
+	--color-light-alt: #F6EDFC;
 
 	/* First color */
 	--first-color				: #436CFF;
@@ -22,18 +23,37 @@
 	--third-color-alt: #55b742;
 	--third-color-hover: #22990b;
 
-	--font-size: 16px;
+	/* Fonts Family */
 	--font-titles: 'Raleway', sans-serif;
 	--font-text: 'Open Sans', sans-serif;
 
-	--header-height: 60px;
-	--height-check: 18px;
+	/* Fonts size */
+	--h1-font-size: 2rem;
+	--h2-font-size: 1.5rem;
+	--font-size: 1rem;
+	--small-font-size: .85rem;
+
+	/* Heights */
+	--header-height: 3rem;
+}
+
+@media screen and (min-width: 64em) {
+	:root {
+		/* Fonts size */
+		--h1-font-size: 2.5rem;
+		--h2-font-size: 1.75rem;
+		--font-size: 1.1rem;
+		--small-font-size: .95rem;
+
+		/* Heights */
+		--header-height: 4rem;
+	}
 }
 * {
 	box-sizing: border-box;
 }
 img {
-	max-width: 100%;
+	min-width: 100%;
 }
 
 body {
